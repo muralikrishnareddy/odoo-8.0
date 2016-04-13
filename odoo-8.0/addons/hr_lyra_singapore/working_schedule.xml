@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate='1'>
+
+        <!-- Employee Working Hours -->
+
+        <record id="lyra_working_schedule_sing" model="resource.calendar">
+            <field name="name">42.5 Hours/Week</field>
+        </record>
+
+        <record model="resource.calendar.attendance" id="calendar_attendance_mon1_sing">
+            <field name="name">Monday morning</field>
+            <field name="dayofweek">0</field>
+            <field name="hour_from">08.50</field>
+            <field name="hour_to">12</field>
+            <field name="calendar_id" ref="lyra_working_schedule_sing"/>
+        </record>
+        <record model="resource.calendar.attendance" id="calendar_attendance_mon2_sing">
+            <field name="name">Monday evening</field>
+            <field name="dayofweek">0</field>
+            <field name="hour_from">13</field>
+            <field name="hour_to">18</field>
+            <field name="calendar_id" ref="lyra_working_schedule_sing"/>
+        </record>
+        <record model="resource.calendar.attendance" id="calendar_attendance_tue1_sing">
+            <field name="name">Tuesday morning</field>
+            <field name="dayofweek">1</field>
+            <field name="hour_from">08.50</field>
+            <field name="hour_to">12</field>
+            <field name="calendar_id" ref="lyra_working_schedule_sing"/>
+        </record>
+        <record model="resource.calendar.attendance" id="calendar_attendance_tue2_sing">
+            <field name="name">Tuesday evening</field>
+            <field name="dayofweek">1</field>
+            <field name="hour_from">13</field>
+            <field name="hour_to">18</field>
+            <field name="calendar_id" ref="lyra_working_schedule_sing"/>
+        </record>
+        <record model="resource.calendar.attendance" id="calendar_attendance_wed1_sing">
+            <field name="name">Wednesday morning</field>
+            <field name="dayofweek">2</field>
+            <field name="hour_from">08.50</field>
+            <field name="hour_to">12</field>
+            <field name="calendar_id" ref="lyra_working_schedule_sing"/>
+        </record>
+        <record model="resource.calendar.attendance" id="calendar_attendance_wed2_sing">
+            <field name="name">Wednesday evening</field>
+            <field name="dayofweek">2</field>
+            <field name="hour_from">13</field>
+            <field name="hour_to">18</field>
+            <field name="calendar_id" ref="lyra_working_schedule_sing"/>
+        </record>
+        <record model="resource.calendar.attendance" id="calendar_attendance_thu1_sing">
+            <field name="name">Thursday morning</field>
+            <field name="dayofweek">3</field>
+            <field name="hour_from">08.50</field>
+            <field name="hour_to">12</field>
+            <field name="calendar_id" ref="lyra_working_schedule_sing"/>
+        </record>
+        <record model="resource.calendar.attendance" id="calendar_attendance_thu2_sing">
+            <field name="name">Thursday evening</field>
+            <field name="hour_from">13</field>
+            <field name="hour_to">18</field>
+            <field name="dayofweek">3</field>
+            <field name="calendar_id" ref="lyra_working_schedule_sing"/>
+        </record>
+        <record model="resource.calendar.attendance" id="calendar_attendance_fri1_sing">
+            <field name="name">Friday morning</field>
+            <field name="dayofweek">4</field>
+            <field name="hour_from">08.50</field>
+            <field name="hour_to">12</field>
+            <field name="calendar_id" ref="lyra_working_schedule_sing"/>
+        </record>
+        <record model="resource.calendar.attendance" id="calendar_attendance_fri2_sing">
+            <field name="name">Friday evening</field>
+            <field name="dayofweek">4</field>
+            <field name="hour_from">13</field>
+            <field name="hour_to">18</field>
+            <field name="calendar_id" ref="lyra_working_schedule_sing"/>
+        </record>
+
+    </data>
+</openerp>

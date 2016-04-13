@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    
+        <!-- Fiscal Year -->
+        <record id="view_public_holiday_form" model="ir.ui.view">
+            <field name="name">public.holiday.form</field>
+            <field name="model">public.holiday</field>
+            <field name="arch" type="xml">
+                <form string="Fiscal year">
+                	<header>
+                		<button name="create_holidays" states="new" string="Create Holidays" type="object" class="oe_highlight"/>
+                		<field name="state" widget="statusbar" readonly="1"/>
+                	</header>
+                    <group>
+                        <group>
+                            <field name="fiscalyear_id" attrs="{'readonly':[('state','!=','new')]}"/>
+                            <field name="company_id" readonly='1' />
+                            <field name="holiday_status_id" readonly='1'/>
+                        </group>
+                    </group>
+                    <group string='Public Holidays'>
+                    <field colspan="4" name="holiday_ids" attrs="{'readonly':[('state','!=','new')]}" nolabel="1" widget="one2many_list">
+                        <tree string="Holidays" editable='True'>
+                                <field name="holiday_name"/>
+                                <field name="date"/>
+                        </tree>                        
+                        <form string="Holidays">
+                            <group col="4">
+                                <field name="holiday_name"/>
+                                <field name="date"/>
+                            </group>
+                        </form>
+                    </field>
+                    </group>
+                </form>
+            </field>
+        </record>
+        
+        <record id="view_public_holiday_tree" model="ir.ui.view">
+            <field name="name">public.holiday.tree</field>
+            <field name="model">public.holiday</field>
+            <field name="arch" type="xml">
+                <tree string="Fiscalyear">
+                    <field name="fiscalyear_id"/>
+                    <field name="company_id" />
+                </tree>
+            </field>
+        </record>
+        <record id="action_hr_public_holiday_virim" model="ir.actions.act_window">
+            <field name="name">Public Holidays</field>
+            <field name="res_model">public.holiday</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to create Public holidays for a fiscal year.
+              </p><p>
+              </p>
+            </field>
+        </record>
+        <menuitem id="action_hr_public_holiday" action="action_hr_public_holiday_virim" parent="hr.menu_hr_configuration" sequence="9"/>
+
+    </data>
+</openerp>        

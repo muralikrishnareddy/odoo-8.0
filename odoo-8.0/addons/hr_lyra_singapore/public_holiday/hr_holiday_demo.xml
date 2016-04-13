@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate='1'>
+
+        <!-- Leave Types -->
+
+        <!-- Holiday -->
+        <record model="hr.holidays.status" id="holiday_status_holiday">
+            <field name="name">Holiday</field>
+            <field name="code">Holiday</field>
+            <field name="limit">True</field>
+            <field name="holiday">True</field>
+            <field name="color_name">brown</field>
+        </record>
+
+    </data>
+</openerp>
+        

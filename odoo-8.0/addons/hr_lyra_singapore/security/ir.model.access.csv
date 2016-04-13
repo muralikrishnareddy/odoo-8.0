@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_fiscalyear_usr,access_hr_fiscalyear_usr,model_hr_fiscalyear,base.group_user,1,1,0,0
+access_hr_fiscalyear,access_hr_fiscalyear,model_hr_fiscalyear,base.group_hr_user,1,1,1,1
+access_hr_period,access_hr_period,model_hr_period,base.group_user,1,1,1,1
+access_public_holiday_lines,access_public_holiday_lines,model_public_holiday_lines,base.group_user,1,1,1,1
+access_public_holiday,access_public_holiday,model_public_holiday,base.group_user,1,1,1,1

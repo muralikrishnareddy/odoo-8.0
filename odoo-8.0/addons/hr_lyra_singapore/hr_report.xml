@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <report 
+            id="hr_payroll.action_report_payslip" 
+            model="hr.payslip" 
+            string="Payslip"
+            report_type="qweb-pdf"
+            name="hr_lyra_singapore.report_payslip" 
+            file="hr_lyra_singapore.report_payslip"
+            
+        />
+        <report
+            id="hr_payroll.payslip_details_report"
+            model="hr.payslip"
+            string="PaySlip Details"
+            report_type="qweb-pdf"
+            name="hr_payroll.report_payslipdetails" 
+            file="hr_payroll.report_payslipdetails"
+            groups="base.group_no_one"
+        />
+        
+        <record id="hr_payroll.action_report_payslip" model="ir.actions.report.xml">
+            <field name="paperformat_id" ref="hr_lyra_singapore.paperformat_payslip"/>
+            <field name="attachment">object.name_singapore.replace(' ','_')+'.pdf'</field>
+        </record>
+        
+    </data>
+</openerp>
+

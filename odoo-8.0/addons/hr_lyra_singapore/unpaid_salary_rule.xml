@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate='1'>
+
+        <!-- Salary Rule for Unpaid leave -->
+        
+        <record id="hr_salary_rule_unpaid_leave" model="hr.salary.rule">
+            <field eval="125" name="sequence"/>
+            <field name="code">UNPAID</field>
+            <field name="category_id" ref="hr_payroll.DED"/>
+            <field name="name">Deduction for Unpaid Leave</field>            
+            <field name="condition_select">python</field>
+            <field name="condition_python">result = (contract.wage / 30) * (worked_days.Unpaid and worked_days.Unpaid.number_of_days)</field>
+            <field name="amount_select">code</field>
+            <field name="amount_python_compute">result = - ((categories.BASIC + categories.ALW) / 30 ) * (worked_days.Unpaid and worked_days.Unpaid.number_of_days)</field>
+            
+        </record>
+	</data>
+</openerp>	       

@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+     
+        <record id="hr_salary_rule_form_inhe" model="ir.ui.view">
+            <field name="name">hr_salary_rule_form.inhe</field>
+            <field name="model">hr.salary.rule</field>
+            <field name="inherit_id" ref="hr_payroll.hr_salary_rule_form"/>
+            <field name="arch" type="xml">
+               <field name="appears_on_payslip" position="after">
+                   <field name="flg_print"/>
+               </field>
+               
+            </field>
+        </record>
+        
+        <record id="hr_contract_view_form_inh" model="ir.ui.view">
+            <field name="name">hr.contract.view.form.inh</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+            <field name="arch" type="xml">
+               <field name="type_id" position="after">
+                   <field name="emp_number" readonly="1"/>
+               </field>
+               <group name="salary_and_advantages" position="inside">
+                   <group name="allowance" string="Allowance" colspan="2">
+                       <field name="employer_cpf"/>
+                       <field name="employer_cpf_per"/>
+                   </group>                   
+               </group>
+               <group name="salary_and_advantages" position="inside">
+                   <group name="deduction" string="Deductions" colspan="2">
+                       <field name="employee_cpf"/>
+                       <field name="employee_cpf_per"/>
+                   </group>                   
+               </group>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_employee_form_inh">
+            <field name="name">hr.employee.form.inherit</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+               <label for="category_ids" position="before"> 
+                <label for="emp_number" class="oe_edit_only"/>
+                    <h1>
+                        <field name="emp_number" required="1"/>
+                    </h1>
+               </label> 
+               <field name="country_id" position="before">
+               	    <field name="emp_cpf_number" groups="base.group_hr_user" required="0"/>   
+               </field>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="hr_hr_employee_view_form2_inh">
+            <field name="name">hr.hr.employee.view.form2.inherit</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr_contract.hr_hr_employee_view_form2"/>
+            <field name="arch" type="xml">
+               <field name="medic_exam" position="before">
+                   <field name="appointed_on" required="1"/>
+               </field>
+            </field>
+        </record>
+     
+        <record id="view_hr_payslip_form_inh" model="ir.ui.view">
+            <field name="name">view.hr.payslip.form.inh</field>
+            <field name="model">hr.payslip</field>
+            <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form"/>
+            <field name="arch" type="xml">
+               <div class="oe_title" position="inside">
+                   <label for="emp_number" class="oe_edit_only" attrs="{'invisible':[('emp_number','=',False)]}"/>
+                   <h1><field name="emp_number" readonly="1"/></h1>
+               </div>
+               
+            </field>
+        </record>
+        
+     <record model="ir.actions.act_window" id="document.action_document_file_form">
+        <field name="name">HR Policies</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">ir.attachment</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">kanban,tree,form</field>
+        <field name="help" type="html">
+          <p class="oe_view_nocontent_create">
+            Click to create a new document. 
+          </p><p>
+            The Documents repository gives you access to all attachments, such
+            as mails, project documents, invoices etc.
+          </p>
+        </field>
+    </record>   
+       
+     <menuitem name="HR Policies" id="document.menu_document_doc" parent="hr.menu_hr_root" sequence="2"/>
+
+     <menuitem name="HR Policies" action="document.action_document_file_form" id="document.menu_document_files" parent="document.menu_document_doc" sequence="0"/>
+
+
+    </data>
+</openerp>

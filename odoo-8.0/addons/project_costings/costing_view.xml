@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		
+		<record id="project_costing_tree_view" model="ir.ui.view">
+			<field name="name">project.costing.tree.view</field>
+			<field name="model">project.costings</field>
+			<field name="arch" type="xml">
+				<tree string="Project Costings">
+					<field name="name"/>
+					<field name="date"/>
+					<field name="partner_id"/>
+					<field name="projected_amount"/>
+					<field name="budgeted_amount"/>
+					<field name="state"/>
+				</tree>
+			</field>
+		</record>
+		
+		
+		<record id="project_costings_form_view" model="ir.ui.view">
+			<field name="name">project.costing.form.view</field>
+			<field name="model">project.costings</field>
+			<field name="arch" type="xml">
+				<form string="Project Costings" version="7.0">
+					<header>
+						<button name="action_confirm" string="Confirm Project" type="object" states="draft"/>
+						<button name="action_cancel" string="Cancel" type="object" states="draft"/>
+						<field name="state" widget="statusbar" readonly="1"/>
+					</header>
+					<sheet>
+						<group col="4">
+						<group>
+							<field name="name" clospan="2" required="1"/>
+							<field name="date" colspan="2" required="1"/>
+							<field name="partner_id" colspan="2" required="1" domain="[('customer','=',True)]"/>
+						</group>
+						<div class="oe_right oe_inline oe_button_box">
+							<field name='budget_id' invisible="1"/>
+							<field name='analytic_account_ids' invisible="1"/>
+							<button name="view_budget" string="Budget" attrs="{'invisible':[('budget_id','=',False)]}" type="object"/>
+							<button name="view_analytic_account" string="Analytic Accounts" states="confirmed" type="object"/>
+						</div>
+						</group>
+						<group string="Project Duration &amp; Details" col="4">
+							<field name="date_from" required="1" colspan="2"/>
+							<field name="responsible_user_id" required="1" colspan="2"/>
+							<field name="date_to" required="1" colspan="2"/>
+							<field name="validated_user_id" colspan="2"/>
+						</group>
+						<notebook>
+							<page string="Cost Information">
+								<group string="Total Project Revenue">
+									<field name="projected_amount"/>
+									<group string="Construction">
+										<field name="construction_revenue_lines" nolabel="1" required="1">
+											<tree editable="top">
+												<field name="name"/>
+												<field name="rate"/>
+												<field name="amount" sum="Total Construction Amount"/>
+											</tree>
+										</field>
+									</group>
+									<group string="Operation">
+										<field name="operation_revenue_lines" nolabel="1" required="1">
+											<tree editable="top">
+												<field name="name"/>
+												<field name="rate"/>
+												<field name="amount" sum="Total Operation Amount"/>
+											</tree>
+										</field>
+									</group>
+								</group>
+								<group string="Total Project Budget">
+									<field name="budgeted_amount"/>
+									<group string="Construction">
+										<field name="construction_costing_lines" nolabel="1" required="1">
+											<tree editable="top">
+												<field name="name"/>
+												<field name="rate"/>
+												<field name="amount" sum="Total Construction Amount"/>
+											</tree>
+										</field>
+									</group>
+									<group string="Operation">
+										<field name="operation_costing_lines" nolabel="1" required="1">
+											<tree editable="top">
+												<field name="name"/>
+												<field name="rate"/>
+												<field name="amount" sum="Total Operation Amount"/>
+											</tree>
+										</field>
+									</group>
+								</group>
+							</page>
+							<page string="Access Information">
+								<field name="user_ids" nolabel="1" view_mode="kanban"/>
+							</page>
+						</notebook>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		
+		<record id="action_project_costings" model="ir.actions.act_window">
+			<field name="name">Project Costings</field>
+			<field name="res_model">project.costings</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		
+		<menuitem action="action_project_costings" id="menu_project_costings" parent="base.menu_sales" sequence="10"/>
+	</data>
+</openerp>

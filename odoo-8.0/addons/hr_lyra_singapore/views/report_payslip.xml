@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+<data>
+<template id="report_payslip">
+<t t-call="report.html_container">
+ <t t-foreach="docs" t-as="o">
+        <div class="page" style="font-size: 16pt;font-family:Helvetica,Verdana,Arial,sans,Lucida Grande,Calibri;">
+            <div>
+              <table class="table-condensed">
+                <tbody>
+                    <tr>
+                        <td rowspan="2">
+                            <img t-if="res_company.logo" t-att-src="'data:image/png;base64,%s' % res_company.logo" style="max-height: 120px;"/>
+                        </td>
+                    </tr>  
+                    <tr style="page-break-inside: avoid !important;">
+                        <td style="width:90%">
+                            <div class="text-center" t-esc="o.get_company_address(res_company)"/>
+                            <div class="text-center" t-esc="o.get_company_phone(res_company)"/>
+                        </td>
+                    </tr>                   
+                </tbody>
+              </table>        
+              <div class="row zero_min_height">
+              <div class="col-xs-12">
+                <div style="border-bottom: 1px solid black;"></div>
+              </div>
+             </div>             
+         </div>
+         <div>
+              <table class="table-condensed" width="100%">
+                <tbody>
+                    <tr style="page-break-inside: avoid !important;">
+                        <td width="49%">
+                            <table class=" table-condensed">
+				<tbody>
+				       <tr style="page-break-inside: avoid !important;">
+				        <td>
+				            Employee Name : <b><span t-esc="o.employee_id.name"/></b>
+				        </td>
+				        </tr>
+				        <tr style="page-break-inside: avoid !important;">
+				        <td>
+				            Employee No : <b><span t-esc="o.employee_id.emp_number"/></b>
+				        </td>
+				        </tr>
+				        <tr style="page-break-inside: avoid !important;">
+				        <td>
+				            Designation : <b><span t-esc="o.employee_id.job_id.name"/></b>
+				        </td>
+				        </tr>
+				        <tr style="page-break-inside: avoid !important;">
+				        <td>
+				            Appointed On : <b><span t-esc="formatLang(o.employee_id.appointed_on, date=True)"/></b>
+				        </td>
+				        </tr>
+				</tbody>
+			    </table>
+                        </td>                        
+                        <td style="width=2%">
+                        </td>
+                        <td style="width=49%">
+                            <table class=" table-condensed">
+				<tbody>
+				    <tr style="page-break-inside: avoid !important;">
+				        <td>
+				            Employee CPF Number : <b><span t-esc="o.employee_id.emp_cpf_number"/></b>
+				        </td>
+				        </tr>  
+				        <tr style="page-break-inside: avoid !important;">
+				        <td>
+				            Salary for the month : <b><span t-esc="o.get_salary_month(o.date_from)"/></b>
+				        </td>
+				        </tr>  
+				        <tr style="page-break-inside: avoid !important;">
+				        <td>
+				            Worked Days : <b><span t-esc="o.get_worked_days(o)"/></b>
+				        </td>
+				        </tr>  
+				        <tr style="page-break-inside: avoid !important;">
+				        <td>
+				            Department : <b><span t-esc="o.employee_id.department_id.name"/></b>
+				        </td>
+				        </tr>  
+				        <tr style="page-break-inside: avoid !important;">
+				        <td>
+				            Location : <b><span t-esc="o.get_location(o)"/></b>
+				        </td>
+				    </tr>                     
+				</tbody>
+			    </table>
+                        </td>
+                    </tr>      
+                    <tr style="page-break-inside: avoid !important;">
+                        <td width="49%">
+                            <table class=" table-condensed" style="border:1 solid #000000" width="100%">
+				<tbody>
+				       <tr style="page-break-inside: avoid !important;border-bottom:1 solid #000000;">
+				        <td style="border-right:1 solid #000000;" class="text-center">
+				            <b>Gross Earnings</b>
+				        </td>
+				        <td class="text-right">
+				            <b>Amount <span t-esc="o.company_id.currency_id.symbol"/> </b>
+				        </td>
+				        </tr>
+				        <tr t-foreach="o.get_earnings(o.line_ids)" t-as="line" style="page-break-inside: avoid !important;">
+				          <td style="border-right:1 solid #000000;">
+				             <span t-esc="line.name"/>
+				          </td>
+				          <td class="text-right">
+				             <span t-esc="line.total!=False and formatLang(line.total) or '&#160;'"/>
+				          </td>
+				        </tr>
+				        <tr style="page-break-inside: avoid !important;border-top:1 solid #000000;">
+				        <td style="border-right:1 solid #000000" class="text-center">
+				            <b>Gross Pay Total</b>
+				        </td>
+				        <td class="text-right">
+				            <b><span t-esc="o.company_id.currency_id.name"/> <span t-esc="formatLang(o.get_gross_pay_total(o))"/> </b>
+				        </td>
+				        </tr>
+				</tbody>
+			    </table>
+                        </td>                        
+                        <td style="width=2%">
+                        </td>
+                        <td style="width=49%">
+                            <table class=" table-condensed" style="border:1 solid #000000" width="100%">
+				<tbody>
+				       <tr style="page-break-inside: avoid !important;border-bottom:1 solid #000000;">
+				        <td style="border-right:1 solid #000000" class="text-center">
+				            <b>Deductions</b>
+				        </td>
+				        <td class="text-right">
+				            <b>Amount <span t-esc="o.company_id.currency_id.symbol"/> </b>
+				        </td>
+				        </tr>
+				        <tr t-foreach="o.get_deductions(o.line_ids)" t-as="line" style="page-break-inside: avoid !important;">
+				          <td style="border-right:1 solid #000000;">
+				             <span t-esc="line.name"/>
+				          </td>
+				          <td class="text-right">
+				             <span t-esc="line.total!=False and formatLang(line.total) or '&#160;'"/>
+				          </td>
+				        </tr>
+				        <tr style="page-break-inside: avoid !important;border-top:1 solid #000000;">
+				        <td style="border-right:1 solid #000000" class="text-center">
+				            <b>Gross Deductions Total</b>
+				        </td>
+				        <td class="text-right">
+				            <b><span t-esc="o.company_id.currency_id.name"/> <span t-esc="formatLang(o.get_gross_deductions_total(o))"/> </b>
+				        </td>
+				        </tr>				        
+				</tbody>
+			    </table>
+                        </td>
+                    </tr>                
+                </tbody>
+              </table> 
+              <table class="table-condensed" width="100%">
+                <tbody>
+                <tr style="page-break-inside: avoid !important;" width="100%">
+                        <td style="width:100%" class="text-center">
+                            <b> </b>
+                        </td>
+                    </tr>
+                    <tr style="page-break-inside: avoid !important;" width="100%">
+                        <td style="width:100%" class="text-center">
+                            <b>Net Payable - <span t-esc="o.company_id.currency_id.symbol"/><span t-esc="formatLang(o.get_net_total(o))"/>/- </b>
+                        </td>
+                    </tr>
+                    <tr style="page-break-inside: avoid !important;" width="100%">
+                        <td style="width:100%" class="text-center">
+                            <b><span t-esc="o.get_net_total_words(o)"/> Only </b>
+                        </td>
+                    </tr>                   
+                </tbody>
+              </table>            
+         </div>
+        </div>    
+   </t>           
+   </t>
+</template>
+
+
+</data>
+</openerp>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+<t t-extend="ListView.buttons">
+    <t t-jquery=".oe_list_buttons" t-operation="append">
+        <label class="oe_fade" t-if="(widget.ViewManager &amp;&amp; widget.ViewManager.active_view) === 'list' &amp;&amp; widget.dataset.model === 'crm.helpdesk'">or</label>
+        <a t-if="(widget.ViewManager &amp;&amp; widget.ViewManager.active_view) === 'list' &amp;&amp; widget.dataset.model === 'crm.helpdesk'" 
+                    class="oe_bold oe_list_button_import_excel"
+                    id="button_export_excel"
+                    href="#">Export as Excel</a>
+    </t>
+</t>
+</templates>

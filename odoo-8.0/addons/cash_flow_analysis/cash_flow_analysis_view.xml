@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		
+           <!-- report , stock inventories date... start -->
+        <record model="ir.ui.view" id="cash_flow_analysis_tree">
+            <field name="name">cash.flow.analysis.tree</field>
+            <field name="model">cash.flow.analysis</field>
+            <field name="arch" type="xml">
+                <tree string="Cash Flow Analysis" create="false">
+                    <field name="date_due"/>
+                    <field name="partner_id"/>
+                    <field name="account_id"/>
+                    <field name="analytic_account_id"/>
+                    <field name="debit"/>
+                    <field name="credit"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="cash_flow_analysis_search">
+            <field name="name">cash.flow.analysis.search</field>
+            <field name="model">cash.flow.analysis</field>
+            <field name="arch" type="xml">
+                <search string="cash Flow Analysis">
+                    <field name="date_due"/>
+                    <filter icon="terp-accessories-archiver" name="unpaid" string="UnPaid" domain="[('reconcile_id','=', 0)]"/>
+                    <filter icon="terp-accessories-archiver" name="posted" string="Posted" domain="[('state','=', 'valid')]"/>
+                    <separator/>
+                    <group expand="0" string="Group By">
+                        <filter string="Partner" icon="terp-partner" domain="[]" context="{'group_by':'partner_id'}" name="group_by_partner"/>
+                        <filter string="Month" icon="terp-go-month" domain="[]" context="{'group_by':'date_due'}" name="group_by_month"/>
+                        <filter string="Flow Type" icon="terp-go-month" domain="[]" context="{'group_by':'type'}" name="group_by_type"/>
+                        <filter string="Analytic Account" icon="terp-go-month" domain="[]" context="{'group_by':'analytic_account_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+        <record id="cash_flow_analysis_graph" model="ir.ui.view">
+	         <field name="name">cash.flow.analysis.graph</field>
+	         <field name="model">cash.flow.analysis</field>
+	         <field name="arch" type="xml">
+	             <graph string="Cash Flow Analysis" type="pivot">
+	                <field name="type" type="row"/>
+	                <field name="date_due" type="col"/>
+	                <field name="balance" type="measure"/>
+	             </graph>
+	         </field>
+	    </record>
+
+        <record model="ir.actions.act_window" id="action_cash_flow_analysis">
+            <field name="name">Cash Flow Analysis</field>
+            <field name="res_model">cash.flow.analysis</field>
+            <field name="view_type">form</field>
+            <field name="search_view_id" ref="cash_flow_analysis_search"/>
+            <field name="context">{'group_by':[], 'search_default_posted':1, 'group_by_no_leaf':0,}</field>
+            <field name="view_mode">graph,tree</field>
+        </record>
+
+        <menuitem parent="account.menu_finance_reporting" action="action_cash_flow_analysis" id="menu_cash_flow_analysis" sequence="3"/>		
+		
+	</data>
+</openerp>

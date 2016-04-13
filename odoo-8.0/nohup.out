@@ -1,0 +1,567 @@
+2015-10-26 06:55:08,593 5368 INFO ? openerp: OpenERP version 8.0
+2015-10-26 06:55:08,593 5368 INFO ? openerp: addons paths: ['/home/murali/.local/share/Odoo/addons/8.0', u'/home/murali/openerp/odoo-8.0/addons', u'/home/murali/openerp/odoo-8.0/ants_addons', '/home/murali/openerp/odoo-8.0/openerp/addons']
+2015-10-26 06:55:08,593 5368 INFO ? openerp: database hostname: localhost
+2015-10-26 06:55:08,593 5368 INFO ? openerp: database port: 5432
+2015-10-26 06:55:08,593 5368 INFO ? openerp: database user: murali
+2015-10-26 06:55:09,816 5368 INFO ? openerp.service.server: HTTP service (werkzeug) running on 0.0.0.0:8085
+2015-10-26 06:55:17,061 5368 INFO ants_test openerp.modules.loading: loading 1 modules...
+2015-10-26 06:55:17,490 5368 INFO ants_test openerp.modules.loading: 1 modules loaded in 0.43s, 0 queries
+2015-10-26 06:55:19,668 5368 INFO ? openerp.addons.bus.bus: Bus.loop listen imbus on db postgres
+2015-10-26 06:55:19,948 5368 WARNING ants_test openerp.modules.module: module base_status: module not found
+2015-10-26 06:55:19,948 5368 WARNING ants_test openerp.modules.graph: module base_status: not installable, skipped
+2015-10-26 06:55:20,906 5368 ERROR ants_test openerp.modules.graph: module jasper_reports: Unmet dependencies: jasper_server
+2015-10-26 06:55:20,906 5368 WARNING ants_test openerp.modules.graph: Some modules were not loaded.
+2015-10-26 06:55:20,907 5368 INFO ants_test openerp.modules.loading: loading 81 modules...
+2015-10-26 06:55:21,053 5368 INFO ants_test passlib.registry: registered crypt handler 'pbkdf2_sha512': <class 'passlib.handlers.pbkdf2.pbkdf2_sha512'>
+2015-10-26 06:55:21,054 5368 INFO ants_test passlib.registry: registered crypt handler 'md5_crypt': <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2015-10-26 06:55:21,747 5368 INFO ants_test openerp.addons.report.models.report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2015-10-26 06:55:40,278 5368 INFO ? openerp.http: HTTP Configuring static files
+2015-10-26 06:55:41,729 5368 INFO ants_test openerp.modules.loading: 81 modules loaded in 20.82s, 0 queries
+2015-10-26 06:55:42,976 5368 INFO ants_test openerp.modules.loading: Modules loaded.
+2015-10-26 06:55:43,068 5368 INFO ants_test openerp.addons.base.ir.ir_http: Generating routing map
+2015-10-26 06:55:43,069 5368 INFO ants_test openerp.addons.base.ir.ir_http: Generating routing map
+2015-10-26 06:55:43,098 5368 INFO ants_test openerp.addons.base.ir.ir_http: Generating routing map
+2015-10-26 06:55:46,216 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:55:46] "POST /web/action/load HTTP/1.1" 200 -
+2015-10-26 06:55:46,325 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:55:46] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2015-10-26 06:55:47,041 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:55:47] "POST /web/dataset/call_kw/mail.message/fields_view_get HTTP/1.1" 200 -
+2015-10-26 06:55:47,133 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:55:47] "POST /web/dataset/call_kw/mail.group/get_suggested_thread HTTP/1.1" 200 -
+2015-10-26 06:55:47,168 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:55:47] "POST /web/dataset/call_kw/ir.filters/get_filters HTTP/1.1" 200 -
+2015-10-26 06:55:47,193 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:55:47] "POST /web/dataset/call_kw/mail.message/fields_get HTTP/1.1" 200 -
+2015-10-26 06:55:47,319 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:55:47] "GET /web/binary/image?model=mail.group&field=image_small&id=2 HTTP/1.1" 304 -
+2015-10-26 06:55:47,384 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:55:47] "POST /web/dataset/call_kw/mail.message/message_read HTTP/1.1" 200 -
+2015-10-26 06:55:47,596 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:55:47] "POST /web/dataset/call_kw/hr.employee/get_suggested_thread HTTP/1.1" 200 -
+2015-10-26 06:55:47,668 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:55:47] "GET /web/binary/image?model=res.partner&field=image_small&id=111&resize= HTTP/1.1" 304 -
+2015-10-26 06:55:47,674 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:55:47] "GET /web/binary/image?model=res.partner&field=image_small&id=512&resize= HTTP/1.1" 304 -
+2015-10-26 06:55:47,713 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:55:47] "GET /web/binary/image?model=hr.employee&field=image_small&id=324 HTTP/1.1" 304 -
+2015-10-26 06:55:47,726 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:55:47] "GET /web/binary/image?model=hr.employee&field=image_small&id=322 HTTP/1.1" 304 -
+2015-10-26 06:55:47,736 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:55:47] "GET /web/binary/image?model=hr.employee&field=image_small&id=323 HTTP/1.1" 304 -
+2015-10-26 06:56:08,287 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:08] "POST /web/action/load HTTP/1.1" 200 -
+2015-10-26 06:56:08,424 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:08] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2015-10-26 06:56:08,522 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:08] "POST /web/dataset/call_kw/board.board/fields_view_get HTTP/1.1" 200 -
+2015-10-26 06:56:08,722 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:08] "POST /web/dataset/call_kw/board.board/onchange HTTP/1.1" 200 -
+2015-10-26 06:56:08,999 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:08] "POST /web/action/load HTTP/1.1" 200 -
+2015-10-26 06:56:09,015 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:09] "POST /web/action/load HTTP/1.1" 200 -
+2015-10-26 06:56:09,216 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:09] "POST /web/dataset/call_kw/hr.expense.expense/fields_view_get HTTP/1.1" 200 -
+2015-10-26 06:56:09,234 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:09] "POST /web/dataset/call_kw/hr.holidays/fields_view_get HTTP/1.1" 200 -
+2015-10-26 06:56:09,272 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:09] "POST /web/dataset/call_kw/hr.holidays/fields_view_get HTTP/1.1" 200 -
+2015-10-26 06:56:09,390 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:09] "POST /web/dataset/call_kw/ir.filters/get_filters HTTP/1.1" 200 -
+2015-10-26 06:56:09,446 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:09] "POST /web/dataset/call_kw/hr.holidays/fields_get HTTP/1.1" 200 -
+2015-10-26 06:56:09,487 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:09] "POST /web/dataset/call_kw/hr.expense.expense/fields_view_get HTTP/1.1" 200 -
+2015-10-26 06:56:09,728 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:09] "POST /web/dataset/call_kw/hr.holidays/fields_view_get HTTP/1.1" 200 -
+2015-10-26 06:56:10,049 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:10] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2015-10-26 06:56:10,316 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:10] "POST /web/dataset/call_kw/hr.holidays/read_group HTTP/1.1" 200 -
+2015-10-26 06:56:10,453 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:10] "POST /web/action/load HTTP/1.1" 200 -
+2015-10-26 06:56:10,671 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:10] "POST /web/dataset/call_kw/hr.expense.expense/fields_view_get HTTP/1.1" 200 -
+2015-10-26 06:56:10,806 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:10] "POST /web/dataset/call_kw/ir.filters/get_filters HTTP/1.1" 200 -
+2015-10-26 06:56:10,841 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:10] "POST /web/dataset/call_kw/hr.expense.expense/fields_get HTTP/1.1" 200 -
+2015-10-26 06:56:10,856 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:10] "POST /web/dataset/call_kw/hr.expense.expense/fields_view_get HTTP/1.1" 200 -
+2015-10-26 06:56:11,109 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:11] "POST /web/dataset/call_kw/hr.expense.expense/fields_view_get HTTP/1.1" 200 -
+2015-10-26 06:56:11,478 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:11] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2015-10-26 06:56:14,764 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:14] "POST /web/dataset/call_kw/hr.expense.expense/fields_view_get HTTP/1.1" 200 -
+2015-10-26 06:56:15,259 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:15] "POST /web/dataset/call_kw/hr.expense.expense/read HTTP/1.1" 200 -
+2015-10-26 06:56:15,434 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:15] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2015-10-26 06:56:15,686 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:15] "POST /web/dataset/call_kw/hr.expense.line/read HTTP/1.1" 200 -
+2015-10-26 06:56:19,761 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:19] "POST /web/dataset/call_kw/hr.expense.expense/unlink HTTP/1.1" 200 -
+2015-10-26 06:56:19,829 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:19] "POST /web/dataset/call_kw/hr.expense.expense/search_read HTTP/1.1" 200 -
+2015-10-26 06:56:19,966 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:19] "POST /web/dataset/call_kw/hr.expense.line/read HTTP/1.1" 200 -
+2015-10-26 06:56:20,085 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:20] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2015-10-26 06:56:21,083 5368 WARNING ants_test openerp.osv.expression: The domain term '('employee_id', '=', [16])' should use the 'in' or 'not in' operator.
+2015-10-26 06:56:21,086 5368 WARNING ants_test openerp.osv.expression: The domain term '('employee_id', '=', [16])' should use the 'in' or 'not in' operator.
+2015-10-26 06:56:21,089 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:21] "POST /web/dataset/call_kw/hr.expense.expense/default_get HTTP/1.1" 200 -
+2015-10-26 06:56:21,387 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:21] "POST /web/dataset/call_kw/hr.employee/name_get HTTP/1.1" 200 -
+2015-10-26 06:56:21,485 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:21] "POST /web/dataset/call_kw/hr.expense.expense/onchange HTTP/1.1" 200 -
+2015-10-26 06:56:21,506 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:21] "POST /web/dataset/call_kw/hr.employee/name_get HTTP/1.1" 200 -
+2015-10-26 06:56:21,718 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:21] "POST /web/dataset/call_kw/hr.department/name_get HTTP/1.1" 200 -
+2015-10-26 06:56:28,151 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:28] "POST /web/dataset/call_kw/sandv.centers/name_search HTTP/1.1" 200 -
+2015-10-26 06:56:29,826 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:29] "POST /web/dataset/call_kw/product.category/name_search HTTP/1.1" 200 -
+2015-10-26 06:56:33,390 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:33] "POST /web/dataset/call_kw/hr.expense.line/default_get HTTP/1.1" 200 -
+ssssssssss {'lang': 'en_US', 'currency_id': 21, 'tz': False, 'uid': 33, 'project_id': False, 'field_parent': 'expense_id'}
+ssssssssss None
+2015-10-26 06:56:33,666 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:33] "POST /web/dataset/call_kw/hr.expense.line/onchange HTTP/1.1" 200 -
+2015-10-26 06:56:33,683 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:33] "POST /web/dataset/call_kw/product.uom/name_get HTTP/1.1" 200 -
+2015-10-26 06:56:35,773 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:35] "POST /longpolling/poll HTTP/1.1" 200 -
+2015-10-26 06:56:35,890 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:35] "POST /web/dataset/call_kw/product.product/name_search HTTP/1.1" 200 -
+ssssssssss None
+2015-10-26 06:56:36,966 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:36] "POST /web/dataset/call_kw/hr.expense.line/onchange HTTP/1.1" 200 -
+2015-10-26 06:56:39,992 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:39] "POST /web/dataset/call_kw/product.product/name_get HTTP/1.1" 200 -
+2015-10-26 06:56:41,579 5368 WARNING ants_test openerp.osv.expression: The domain term '('employee_id', '=', [16])' should use the 'in' or 'not in' operator.
+2015-10-26 06:56:41,582 5368 WARNING ants_test openerp.osv.expression: The domain term '('employee_id', '=', [16])' should use the 'in' or 'not in' operator.
+yyyyyyyyyyyyyyyyyyyyy {'billno': False, 'product_id': 152, 'uom_id': 1, 'expense_id': 426, 'date_value': '2015-10-26', 'analytic_account': False, 'unit_amount': 10, 'unit_quantity': 1, 'name': ' Conveyance Charges'}
+2015-10-26 06:56:42,333 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:42] "POST /web/dataset/call_kw/hr.expense.expense/create HTTP/1.1" 200 -
+2015-10-26 06:56:42,358 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:42] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2015-10-26 06:56:42,386 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:42] "POST /web/dataset/call_kw/hr.expense.expense/search_read HTTP/1.1" 200 -
+2015-10-26 06:56:42,540 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:42] "POST /web/dataset/call_kw/hr.expense.expense/search_read HTTP/1.1" 200 -
+2015-10-26 06:56:42,556 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:42] "POST /web/dataset/call_kw/hr.expense.line/read HTTP/1.1" 200 -
+2015-10-26 06:56:42,775 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:42] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2015-10-26 06:56:42,791 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:42] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2015-10-26 06:56:42,804 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:42] "POST /web/dataset/call_kw/hr.expense.line/read HTTP/1.1" 200 -
+2015-10-26 06:56:42,991 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:56:42] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2015-10-26 06:57:25,905 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:57:25] "POST /longpolling/poll HTTP/1.1" 200 -
+2015-10-26 06:58:06,565 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:06] "POST /web/dataset/call_kw/hr.expense.expense/unlink HTTP/1.1" 200 -
+2015-10-26 06:58:06,600 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:06] "POST /web/dataset/call_kw/hr.expense.expense/search_read HTTP/1.1" 200 -
+2015-10-26 06:58:06,737 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:06] "POST /web/dataset/call_kw/hr.expense.line/read HTTP/1.1" 200 -
+2015-10-26 06:58:06,844 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:06] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2015-10-26 06:58:08,440 5368 WARNING ants_test openerp.osv.expression: The domain term '('employee_id', '=', [16])' should use the 'in' or 'not in' operator.
+2015-10-26 06:58:08,441 5368 WARNING ants_test openerp.osv.expression: The domain term '('employee_id', '=', [16])' should use the 'in' or 'not in' operator.
+2015-10-26 06:58:08,443 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:08] "POST /web/dataset/call_kw/hr.expense.expense/default_get HTTP/1.1" 200 -
+2015-10-26 06:58:08,739 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:08] "POST /web/dataset/call_kw/hr.employee/name_get HTTP/1.1" 200 -
+2015-10-26 06:58:08,821 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:08] "POST /web/dataset/call_kw/hr.employee/name_get HTTP/1.1" 200 -
+2015-10-26 06:58:08,837 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:08] "POST /web/dataset/call_kw/hr.expense.expense/onchange HTTP/1.1" 200 -
+2015-10-26 06:58:09,027 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:09] "POST /web/dataset/call_kw/hr.department/name_get HTTP/1.1" 200 -
+2015-10-26 06:58:12,093 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:12] "POST /web/dataset/call_kw/product.category/name_search HTTP/1.1" 200 -
+2015-10-26 06:58:14,405 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:14] "POST /web/dataset/call_kw/product.category/name_search HTTP/1.1" 200 -
+2015-10-26 06:58:14,604 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:14] "POST /web/dataset/call_kw/product.category/fields_view_get HTTP/1.1" 200 -
+2015-10-26 06:58:14,677 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:14] "POST /web/dataset/call_kw/ir.filters/get_filters HTTP/1.1" 200 -
+2015-10-26 06:58:14,680 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:14] "POST /web/dataset/call_kw/product.category/fields_get HTTP/1.1" 200 -
+2015-10-26 06:58:14,832 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:14] "POST /web/dataset/call_kw/product.category/fields_view_get HTTP/1.1" 200 -
+2015-10-26 06:58:14,952 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:14] "POST /web/dataset/call_kw/product.category/fields_view_get HTTP/1.1" 200 -
+2015-10-26 06:58:15,028 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:15] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2015-10-26 06:58:16,035 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:16] "POST /longpolling/poll HTTP/1.1" 200 -
+2015-10-26 06:58:17,238 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:17] "POST /web/dataset/call_kw/product.category/name_get HTTP/1.1" 200 -
+2015-10-26 06:58:18,371 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:18] "POST /web/dataset/call_kw/sandv.centers/name_search HTTP/1.1" 200 -
+2015-10-26 06:58:20,720 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:20] "POST /web/dataset/call_kw/hr.expense.line/default_get HTTP/1.1" 200 -
+ssssssssss {'lang': 'en_US', 'currency_id': 21, 'tz': False, 'uid': 33, 'project_id': False, 'field_parent': 'expense_id'}
+ssssssssss None
+2015-10-26 06:58:21,060 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:21] "POST /web/dataset/call_kw/hr.expense.line/onchange HTTP/1.1" 200 -
+2015-10-26 06:58:21,065 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:21] "POST /web/dataset/call_kw/product.uom/name_get HTTP/1.1" 200 -
+2015-10-26 06:58:22,456 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:22] "POST /web/dataset/call_kw/product.product/name_search HTTP/1.1" 200 -
+ssssssssss None
+2015-10-26 06:58:23,914 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:23] "POST /web/dataset/call_kw/hr.expense.line/onchange HTTP/1.1" 200 -
+2015-10-26 06:58:27,275 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:27] "POST /web/dataset/call_kw/product.product/name_get HTTP/1.1" 200 -
+2015-10-26 06:58:27,314 5368 WARNING ants_test openerp.osv.expression: The domain term '('employee_id', '=', [16])' should use the 'in' or 'not in' operator.
+2015-10-26 06:58:27,315 5368 WARNING ants_test openerp.osv.expression: The domain term '('employee_id', '=', [16])' should use the 'in' or 'not in' operator.
+yyyyyyyyyyyyyyyyyyyyy {'billno': False, 'product_id': 157, 'uom_id': 1, 'expense_id': 427, 'date_value': '2015-10-26', 'analytic_account': False, 'unit_amount': 10, 'unit_quantity': 1, 'name': ' Portal Subscription Charges '}
+2015-10-26 06:58:27,391 5368 WARNING ants_test openerp.addons.base.ir.ir_model: Access Denied by ACLs for operation: create, uid: 33, model: ir.sequence
+2015-10-26 06:58:27,391 5368 ERROR ants_test openerp.http: Exception during JSON request handling.
+Traceback (most recent call last):
+  File "/home/murali/openerp/odoo-8.0/openerp/http.py", line 500, in _handle_exception
+    return super(JsonRequest, self)._handle_exception(exception)
+  File "/home/murali/openerp/odoo-8.0/openerp/http.py", line 517, in dispatch
+    result = self._call_function(**self.params)
+  File "/home/murali/openerp/odoo-8.0/openerp/http.py", line 283, in _call_function
+    return checked_call(self.db, *args, **kwargs)
+  File "/home/murali/openerp/odoo-8.0/openerp/service/model.py", line 113, in wrapper
+    return f(dbname, *args, **kwargs)
+  File "/home/murali/openerp/odoo-8.0/openerp/http.py", line 280, in checked_call
+    return self.endpoint(*a, **kw)
+  File "/home/murali/openerp/odoo-8.0/openerp/http.py", line 733, in __call__
+    return self.method(*args, **kw)
+  File "/home/murali/openerp/odoo-8.0/openerp/http.py", line 376, in response_wrap
+    response = f(*args, **kw)
+  File "/home/murali/openerp/odoo-8.0/addons/web/controllers/main.py", line 948, in call_kw
+    return self._call_kw(model, method, args, kwargs)
+  File "/home/murali/openerp/odoo-8.0/addons/web/controllers/main.py", line 940, in _call_kw
+    return getattr(request.registry.get(model), method)(request.cr, request.uid, *args, **kwargs)
+  File "/home/murali/openerp/odoo-8.0/openerp/api.py", line 237, in wrapper
+    return old_api(self, *args, **kwargs)
+  File "/home/murali/openerp/odoo-8.0/addons/base_action_rule/base_action_rule.py", line 177, in create
+    new_id = create.origin(self, cr, uid, vals, context=context, **kwargs)
+  File "/home/murali/openerp/odoo-8.0/openerp/api.py", line 237, in wrapper
+    return old_api(self, *args, **kwargs)
+  File "/home/murali/openerp/odoo-8.0/addons/mail/mail_thread.py", line 377, in create
+    thread_id = super(mail_thread, self).create(cr, uid, values, context=context)
+  File "/home/murali/openerp/odoo-8.0/openerp/api.py", line 237, in wrapper
+    return old_api(self, *args, **kwargs)
+  File "/home/murali/openerp/odoo-8.0/openerp/api.py", line 332, in old_api
+    result = method(recs, *args, **kwargs)
+  File "/home/murali/openerp/odoo-8.0/openerp/models.py", line 3968, in create
+    record = self.browse(self._create(old_vals))
+  File "/home/murali/openerp/odoo-8.0/openerp/api.py", line 235, in wrapper
+    return new_api(self, *args, **kwargs)
+  File "/home/murali/openerp/odoo-8.0/openerp/api.py", line 464, in new_api
+    result = method(self._model, cr, uid, *args, **kwargs)
+  File "/home/murali/openerp/odoo-8.0/openerp/models.py", line 4153, in _create
+    result += self._columns[field].set(cr, self, id_new, field, vals[field], user, rel_context) or []
+  File "/home/murali/openerp/odoo-8.0/openerp/osv/fields.py", line 742, in set
+    id_new = obj.create(cr, user, act[2], context=context)
+  File "/home/murali/openerp/odoo-8.0/openerp/api.py", line 237, in wrapper
+    return old_api(self, *args, **kwargs)
+  File "/home/murali/openerp/odoo-8.0/ants_addons/hr_expense_ants/hr_expense.py", line 579, in create
+    seqid = self.pool.get('product.category').create_sequence(cr, uid, {'name':category.name})
+  File "/home/murali/openerp/odoo-8.0/openerp/api.py", line 237, in wrapper
+    return old_api(self, *args, **kwargs)
+  File "/home/murali/openerp/odoo-8.0/ants_addons/hr_expense_ants/hr_expense.py", line 544, in create_sequence
+    return self.pool.get('ir.sequence').create(cr, uid, seq)
+  File "/home/murali/openerp/odoo-8.0/openerp/api.py", line 237, in wrapper
+    return old_api(self, *args, **kwargs)
+  File "/home/murali/openerp/odoo-8.0/openerp/addons/base/ir/ir_sequence.py", line 176, in create
+    values['id'] = super(ir_sequence, self).create(cr, uid, values, context)
+  File "/home/murali/openerp/odoo-8.0/openerp/api.py", line 237, in wrapper
+    return old_api(self, *args, **kwargs)
+  File "/home/murali/openerp/odoo-8.0/openerp/api.py", line 332, in old_api
+    result = method(recs, *args, **kwargs)
+  File "/home/murali/openerp/odoo-8.0/openerp/models.py", line 3945, in create
+    self.check_access_rights('create')
+  File "/home/murali/openerp/odoo-8.0/openerp/api.py", line 235, in wrapper
+    return new_api(self, *args, **kwargs)
+  File "/home/murali/openerp/odoo-8.0/openerp/api.py", line 442, in new_api
+    result = method(self._model, cr, uid, *args, **kwargs)
+  File "/home/murali/openerp/odoo-8.0/openerp/models.py", line 3414, in check_access_rights
+    return self.pool.get('ir.model.access').check(cr, uid, self._name, operation, raise_exception)
+  File "/home/murali/openerp/odoo-8.0/openerp/api.py", line 237, in wrapper
+    return old_api(self, *args, **kwargs)
+  File "<string>", line 2, in check
+  File "/home/murali/openerp/odoo-8.0/openerp/tools/cache.py", line 71, in lookup
+    value = d[key] = self.method(*args, **kwargs)
+  File "/home/murali/openerp/odoo-8.0/openerp/addons/base/ir/ir_model.py", line 783, in check
+    raise openerp.exceptions.AccessError(msg % msg_params)
+AccessError: ('AccessError', u'Sorry, you are not allowed to create this kind of document. Only users with the following access level are currently allowed to do that:\n- Administration/Configuration\n\n(Document model: ir.sequence)')
+2015-10-26 06:58:27,509 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:27] "POST /web/dataset/call_kw/hr.expense.expense/create HTTP/1.1" 200 -
+2015-10-26 06:58:27,630 5368 INFO ? werkzeug: 192.109.207.121 - - [26/Oct/2015 06:58:27] "GET /web/static/src/img/warning.png HTTP/1.1" 200 -
+2015-10-26 06:59:06,072 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:59:06] "POST /longpolling/poll HTTP/1.1" 200 -
+2015-10-26 06:59:10,731 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:59:10] "POST /calendar/notify HTTP/1.1" 200 -
+2015-10-26 06:59:56,108 5368 INFO ants_test werkzeug: 192.109.207.121 - - [26/Oct/2015 06:59:56] "POST /longpolling/poll HTTP/1.1" 200 -
+2015-11-02 05:11:32,656 3789 INFO ? openerp: OpenERP version 8.0
+2015-11-02 05:11:32,675 3789 INFO ? openerp: addons paths: ['/home/murali/.local/share/Odoo/addons/8.0', u'/home/murali/openerp/odoo-8.0/addons', u'/home/murali/openerp/odoo-8.0/ants_addons', '/home/murali/openerp/odoo-8.0/openerp/addons']
+2015-11-02 05:11:32,675 3789 INFO ? openerp: database hostname: localhost
+2015-11-02 05:11:32,675 3789 INFO ? openerp: database port: 5432
+2015-11-02 05:11:32,675 3789 INFO ? openerp: database user: murali
+2015-11-02 05:11:33,296 3789 INFO ? openerp.service.server: HTTP service (werkzeug) running on 0.0.0.0:8085
+2015-11-02 05:11:38,196 3789 INFO ? openerp.addons.bus.bus: Bus.loop listen imbus on db postgres
+2015-11-02 05:11:41,213 3789 INFO ? openerp.addons.report.models.report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2015-11-02 05:11:42,091 3789 INFO ? openerp.http: HTTP Configuring static files
+2015-11-02 05:11:42,154 3789 INFO ants_test openerp.modules.loading: loading 1 modules...
+2015-11-02 05:11:42,613 3789 INFO ants_test openerp.modules.loading: 1 modules loaded in 0.38s, 0 queries
+2015-11-02 05:11:42,658 3789 WARNING ants_test openerp.modules.module: module base_status: module not found
+2015-11-02 05:11:42,658 3789 WARNING ants_test openerp.modules.graph: module base_status: not installable, skipped
+2015-11-02 05:11:42,693 3789 ERROR ants_test openerp.modules.graph: module jasper_reports: Unmet dependencies: jasper_server
+2015-11-02 05:11:42,693 3789 WARNING ants_test openerp.modules.graph: Some modules were not loaded.
+2015-11-02 05:11:42,694 3789 INFO ants_test openerp.modules.loading: loading 81 modules...
+2015-11-02 05:11:42,859 3789 INFO ants_test passlib.registry: registered crypt handler 'pbkdf2_sha512': <class 'passlib.handlers.pbkdf2.pbkdf2_sha512'>
+2015-11-02 05:11:42,860 3789 INFO ants_test passlib.registry: registered crypt handler 'md5_crypt': <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2015-11-02 05:11:47,869 3789 INFO ants_test openerp.modules.loading: 81 modules loaded in 5.17s, 0 queries
+2015-11-02 05:11:48,980 3789 INFO ants_test openerp.modules.loading: Modules loaded.
+2015-11-02 05:11:49,060 3789 INFO ants_test openerp.addons.base.ir.ir_http: Generating routing map
+2015-11-02 05:11:49,060 3789 INFO ants_test openerp.addons.base.ir.ir_http: Generating routing map
+2015-11-02 05:11:50,448 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:11:50] "POST /web/action/load HTTP/1.1" 200 -
+2015-11-02 05:11:51,239 3789 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:11:51] "GET /report/static/src/css/reset.min.css HTTP/1.1" 200 -
+2015-11-02 05:11:51,241 3789 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:11:51] "GET /website/static/src/css/website.css HTTP/1.1" 200 -
+2015-11-02 05:11:51,242 3789 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:11:51] "GET /web/static/lib/bootstrap/css/bootstrap.css HTTP/1.1" 200 -
+2015-11-02 05:11:51,246 3789 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:11:51] "GET /web/static/lib/fontawesome/css/font-awesome.css HTTP/1.1" 200 -
+2015-11-02 05:11:51,554 3789 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:11:51] "GET /report/static/src/js/subst.js HTTP/1.1" 200 -
+2015-11-02 05:11:51,628 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:11:51] "POST /report/download HTTP/1.1" 200 -
+2015-11-02 05:11:57,106 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:11:57] "GET /web HTTP/1.1" 200 -
+2015-11-02 05:11:57,181 3789 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:11:57] "GET /web/static/src/css/full.css HTTP/1.1" 200 -
+2015-11-02 05:11:57,234 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:11:57] "GET /web/css/web.assets_common/f58fb36 HTTP/1.1" 200 -
+2015-11-02 05:11:57,274 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:11:57] "GET /web/js/web.assets_common/f58fb36 HTTP/1.1" 200 -
+2015-11-02 05:11:58,631 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:11:58] "GET /web/css/web.assets_backend/2400f2d HTTP/1.1" 200 -
+2015-11-02 05:12:00,799 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:00] "GET /web/js/web.assets_backend/2400f2d HTTP/1.1" 200 -
+2015-11-02 05:12:01,164 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:01] "GET /web/binary/company_logo HTTP/1.1" 200 -
+2015-11-02 05:12:01,798 3789 INFO ants_test openerp.service.common: successful login from 'admin' using database 'ants_test'
+2015-11-02 05:12:01,818 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:01] "POST /web/session/get_session_info HTTP/1.1" 200 -
+2015-11-02 05:12:01,841 3789 INFO None openerp.http: Generating nondb routing
+2015-11-02 05:12:02,187 3789 INFO None werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:02] "POST /web/proxy/load HTTP/1.1" 200 -
+2015-11-02 05:12:02,304 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:02] "POST /web/session/modules HTTP/1.1" 200 -
+2015-11-02 05:12:02,317 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:02] "POST /web/webclient/translations HTTP/1.1" 200 -
+2015-11-02 05:12:02,545 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:02] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 -
+2015-11-02 05:12:02,600 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:02] "POST /web/dataset/call_kw/ir.config_parameter/get_param HTTP/1.1" 200 -
+2015-11-02 05:12:02,618 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:02] "POST /web/dataset/call_kw/res.users/read HTTP/1.1" 200 -
+2015-11-02 05:12:02,633 3789 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:02] "GET /web/static/src/img/user_menu_avatar.png HTTP/1.1" 200 -
+2015-11-02 05:12:02,640 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:02] "POST /calendar/notify HTTP/1.1" 200 -
+2015-11-02 05:12:02,651 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:02] "POST /web/dataset/call_kw/res.users/read HTTP/1.1" 200 -
+2015-11-02 05:12:02,724 3789 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:02] "GET /im_odoo_support/static/img/odoo_o_small.png HTTP/1.1" 200 -
+2015-11-02 05:12:02,727 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:02] "GET /web/binary/image?model=res.users&field=image_small&id=1 HTTP/1.1" 200 -
+2015-11-02 05:12:02,737 3789 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:02] "GET /im_chat/static/src/img/green.png HTTP/1.1" 200 -
+2015-11-02 05:12:02,748 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:02] "POST /im_chat/init HTTP/1.1" 200 -
+2015-11-02 05:12:02,825 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:02] "POST /web/action/load HTTP/1.1" 200 -
+2015-11-02 05:12:02,942 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:02] "POST /web/dataset/call_kw/share.wizard/has_share HTTP/1.1" 200 -
+2015-11-02 05:12:02,986 3789 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:02] "GET /web/static/src/img/search_reset.gif HTTP/1.1" 200 -
+2015-11-02 05:12:03,057 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:03] "POST /web/dataset/call_kw/hr.expense.expense/fields_view_get HTTP/1.1" 200 -
+2015-11-02 05:12:03,202 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:03] "POST /web/dataset/call_kw/ir.filters/get_filters HTTP/1.1" 200 -
+2015-11-02 05:12:03,234 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:03] "POST /web/dataset/call_kw/hr.expense.expense/fields_get HTTP/1.1" 200 -
+2015-11-02 05:12:03,256 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:03] "POST /web/dataset/call_kw/hr.expense.expense/fields_view_get HTTP/1.1" 200 -
+2015-11-02 05:12:03,649 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:03] "POST /web/dataset/call_kw/hr.expense.expense/fields_view_get HTTP/1.1" 200 -
+yyyyyyyyyyyyyyyyyyyyy {'lang': u'en_US', 'project_id': False, 'tz': u'Asia/Kolkata', 'uid': 1}
+2015-11-02 05:12:04,140 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:04] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2015-11-02 05:12:04,167 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:04] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2015-11-02 05:12:04,660 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:04] "POST /web/dataset/call_kw/hr.expense.expense/fields_view_get HTTP/1.1" 200 -
+2015-11-02 05:12:04,988 3789 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:04] "GET /web/static/lib/jquery.ui.bootstrap/css/custom-theme/images/ui-bg_glass_75_ffffff_1x400.png HTTP/1.1" 200 -
+2015-11-02 05:12:05,046 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:05] "POST /web/dataset/call_kw/hr.expense.expense/read HTTP/1.1" 200 -
+2015-11-02 05:12:05,057 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:05] "POST /web/dataset/call_kw/hr.expense.expense/read HTTP/1.1" 200 -
+2015-11-02 05:12:05,233 3789 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:05] "GET /web/static/src/img/icons/terp-stock_format-scientific.png HTTP/1.1" 200 -
+2015-11-02 05:12:05,239 3789 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:05] "GET /web/static/src/img/icons/gtk-convert.png HTTP/1.1" 200 -
+2015-11-02 05:12:05,241 3789 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:05] "GET /web/static/src/img/icons/gtk-no.png HTTP/1.1" 200 -
+2015-11-02 05:12:05,242 3789 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:05] "GET /web/static/src/img/icons/gtk-apply.png HTTP/1.1" 200 -
+2015-11-02 05:12:05,244 3789 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:05] "GET /web/static/src/img/icons/gtk-go-forward.png HTTP/1.1" 200 -
+2015-11-02 05:12:05,247 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:05] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2015-11-02 05:12:05,443 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:05] "POST /web/dataset/call_kw/hr.expense.line/read HTTP/1.1" 200 -
+2015-11-02 05:12:05,612 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:05] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2015-11-02 05:12:07,320 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:07] "POST /web/action/load HTTP/1.1" 200 -
+2015-11-02 05:12:07,398 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:07] "POST /report/check_wkhtmltopdf HTTP/1.1" 200 -
+2015-11-02 05:12:07,657 3789 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:07] "GET /report/static/src/css/reset.min.css HTTP/1.1" 200 -
+2015-11-02 05:12:07,661 3789 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:07] "GET /web/static/lib/fontawesome/css/font-awesome.css HTTP/1.1" 200 -
+2015-11-02 05:12:07,663 3789 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:07] "GET /web/static/lib/bootstrap/css/bootstrap.css HTTP/1.1" 200 -
+2015-11-02 05:12:07,666 3789 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:07] "GET /website/static/src/css/website.css HTTP/1.1" 200 -
+2015-11-02 05:12:07,970 3789 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:07] "GET /report/static/src/js/subst.js HTTP/1.1" 200 -
+2015-11-02 05:12:08,047 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:08] "POST /report/download HTTP/1.1" 200 -
+2015-11-02 05:12:40,455 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:40] "POST /longpolling/poll HTTP/1.1" 200 -
+2015-11-02 05:12:52,824 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:12:52] "POST /longpolling/poll HTTP/1.1" 200 -
+2015-11-02 05:13:42,864 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:13:42] "POST /longpolling/poll HTTP/1.1" 200 -
+2015-11-02 05:14:32,909 3789 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:14:32] "POST /longpolling/poll HTTP/1.1" 200 -
+2015-11-02 05:14:51,722 3966 INFO ? openerp: OpenERP version 8.0
+2015-11-02 05:14:51,723 3966 INFO ? openerp: addons paths: ['/home/murali/.local/share/Odoo/addons/8.0', u'/home/murali/openerp/odoo-8.0/addons', u'/home/murali/openerp/odoo-8.0/ants_addons', '/home/murali/openerp/odoo-8.0/openerp/addons']
+2015-11-02 05:14:51,723 3966 INFO ? openerp: database hostname: localhost
+2015-11-02 05:14:51,723 3966 INFO ? openerp: database port: 5432
+2015-11-02 05:14:51,723 3966 INFO ? openerp: database user: murali
+2015-11-02 05:14:51,849 3966 INFO ? openerp.service.server: HTTP service (werkzeug) running on 0.0.0.0:8085
+2015-11-02 05:15:25,244 3966 INFO ? openerp.addons.bus.bus: Bus.loop listen imbus on db postgres
+2015-11-02 05:15:25,547 3966 INFO ? openerp.addons.report.models.report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2015-11-02 05:15:25,727 3966 INFO ? openerp.http: HTTP Configuring static files
+2015-11-02 05:15:25,738 3966 INFO None openerp.http: Generating nondb routing
+2015-11-02 05:15:25,754 3966 INFO None werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:25] "GET / HTTP/1.1" 303 -
+2015-11-02 05:15:25,779 3966 INFO None werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:25] "GET /web HTTP/1.1" 303 -
+2015-11-02 05:15:25,873 3966 INFO None werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:25] "GET /web/database/selector HTTP/1.1" 200 -
+2015-11-02 05:15:25,889 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:25] "GET /web/static/src/css/full.css HTTP/1.1" 200 -
+2015-11-02 05:15:25,891 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:25] "GET /web/static/lib/fontawesome/css/font-awesome.css HTTP/1.1" 200 -
+2015-11-02 05:15:25,898 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:25] "GET /web/static/src/css/base.css HTTP/1.1" 200 -
+2015-11-02 05:15:25,901 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:25] "GET /web/static/lib/bootstrap/css/bootstrap.css HTTP/1.1" 200 -
+2015-11-02 05:15:25,929 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:25] "GET /web/static/src/img/logo2.png HTTP/1.1" 200 -
+2015-11-02 05:15:25,930 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:25] "GET /web/static/src/img/favicon.ico HTTP/1.1" 200 -
+2015-11-02 05:15:25,976 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:25] "GET /web/static/src/img/form_sheetbg.png HTTP/1.1" 200 -
+2015-11-02 05:15:31,642 3966 INFO None werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:31] "GET /web?db=ants_test HTTP/1.1" 302 -
+2015-11-02 05:15:31,662 3966 INFO ants_test openerp.modules.loading: loading 1 modules...
+2015-11-02 05:15:32,031 3966 INFO ants_test openerp.modules.loading: 1 modules loaded in 0.37s, 0 queries
+2015-11-02 05:15:32,060 3966 WARNING ants_test openerp.modules.module: module base_status: module not found
+2015-11-02 05:15:32,060 3966 WARNING ants_test openerp.modules.graph: module base_status: not installable, skipped
+2015-11-02 05:15:32,091 3966 ERROR ants_test openerp.modules.graph: module jasper_reports: Unmet dependencies: jasper_server
+2015-11-02 05:15:32,092 3966 WARNING ants_test openerp.modules.graph: Some modules were not loaded.
+2015-11-02 05:15:32,092 3966 INFO ants_test openerp.modules.loading: loading 81 modules...
+2015-11-02 05:15:32,099 3966 INFO ants_test passlib.registry: registered crypt handler 'pbkdf2_sha512': <class 'passlib.handlers.pbkdf2.pbkdf2_sha512'>
+2015-11-02 05:15:32,100 3966 INFO ants_test passlib.registry: registered crypt handler 'md5_crypt': <class 'passlib.handlers.md5_crypt.md5_crypt'>
+2015-11-02 05:15:36,143 3966 INFO ants_test openerp.modules.loading: 81 modules loaded in 4.05s, 0 queries
+2015-11-02 05:15:37,103 3966 INFO ants_test openerp.modules.loading: Modules loaded.
+2015-11-02 05:15:37,172 3966 INFO ants_test openerp.addons.base.ir.ir_http: Generating routing map
+2015-11-02 05:15:37,274 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:37] "GET /web?db=ants_test HTTP/1.1" 200 -
+2015-11-02 05:15:38,167 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:38] "GET /web/login?redirect=http%3A%2F%2F192.109.207.121%3A8085%2Fweb%3Fdb%3Dants_test HTTP/1.1" 200 -
+2015-11-02 05:15:38,176 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:38] "GET /favicon.ico HTTP/1.1" 404 -
+2015-11-02 05:15:38,228 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:38] "GET /web/css/web.assets_common/f58fb36 HTTP/1.1" 200 -
+2015-11-02 05:15:38,327 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:38] "GET /web/js/web.assets_common/f58fb36 HTTP/1.1" 200 -
+2015-11-02 05:15:38,344 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:38] "GET /web/css/website.assets_frontend/297f9db HTTP/1.1" 200 -
+2015-11-02 05:15:38,377 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:38] "GET /logo.png HTTP/1.1" 200 -
+2015-11-02 05:15:38,385 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:38] "GET /web/js/website.assets_frontend/297f9db HTTP/1.1" 200 -
+2015-11-02 05:15:38,596 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:38] "GET /website/static/src/xml/website.xml HTTP/1.1" 200 -
+2015-11-02 05:15:38,627 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:38] "GET /web/static/lib/fontawesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 -
+2015-11-02 05:15:38,736 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:38] "GET /web/login?redirect=http%3A%2F%2F192.109.207.121%3A8085%2Fweb%3Fdb%3Dants_test HTTP/1.1" 200 -
+2015-11-02 05:15:43,358 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:43] "POST /web/login HTTP/1.1" 303 -
+2015-11-02 05:15:45,849 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:45] "GET /web?db=ants_test HTTP/1.1" 200 -
+2015-11-02 05:15:46,272 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:46] "GET /web/css/web.assets_backend/2400f2d HTTP/1.1" 200 -
+2015-11-02 05:15:46,473 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:46] "GET /web/js/web.assets_backend/2400f2d HTTP/1.1" 200 -
+2015-11-02 05:15:46,504 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:46] "GET /web/binary/company_logo HTTP/1.1" 200 -
+2015-11-02 05:15:47,505 3966 INFO ants_test openerp.service.common: successful login from 'admin' using database 'ants_test'
+2015-11-02 05:15:47,507 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:47] "POST /web/session/get_session_info HTTP/1.1" 200 -
+2015-11-02 05:15:47,672 3966 INFO None werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:47] "POST /web/proxy/load HTTP/1.1" 200 -
+2015-11-02 05:15:47,785 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:47] "POST /web/session/modules HTTP/1.1" 200 -
+2015-11-02 05:15:47,824 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:47] "POST /web/webclient/translations HTTP/1.1" 200 -
+2015-11-02 05:15:47,858 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:47] "GET /web/static/lib/datejs/globalization/en-US.js HTTP/1.1" 200 -
+2015-11-02 05:15:48,040 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:48] "GET /web/static/src/img/user_menu_avatar.png HTTP/1.1" 200 -
+2015-11-02 05:15:48,066 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:48] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 -
+2015-11-02 05:15:48,126 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:48] "POST /web/dataset/call_kw/res.users/read HTTP/1.1" 200 -
+2015-11-02 05:15:48,127 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:48] "POST /web/dataset/call_kw/res.users/read HTTP/1.1" 200 -
+2015-11-02 05:15:48,138 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:48] "POST /web/dataset/call_kw/ir.config_parameter/get_param HTTP/1.1" 200 -
+2015-11-02 05:15:48,139 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:48] "POST /web/dataset/call_kw/res.users/read HTTP/1.1" 200 -
+2015-11-02 05:15:48,184 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:48] "POST /calendar/notify HTTP/1.1" 200 -
+2015-11-02 05:15:48,263 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:48] "GET /web/static/src/font/entypo-webfont.ttf HTTP/1.1" 200 -
+2015-11-02 05:15:48,267 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:48] "GET /im_odoo_support/static/img/odoo_o_small.png HTTP/1.1" 200 -
+2015-11-02 05:15:48,279 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:48] "GET /im_chat/static/src/img/green.png HTTP/1.1" 200 -
+2015-11-02 05:15:48,300 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:48] "GET /web/binary/image?model=res.users&field=image_small&id=1 HTTP/1.1" 200 -
+2015-11-02 05:15:48,312 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:48] "POST /web/action/load HTTP/1.1" 200 -
+2015-11-02 05:15:48,325 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:48] "POST /im_chat/init HTTP/1.1" 200 -
+2015-11-02 05:15:48,610 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:48] "POST /web/dataset/call_kw/mail.message/message_read HTTP/1.1" 200 -
+2015-11-02 05:15:48,641 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:48] "POST /web/dataset/call_kw/mail.group/get_suggested_thread HTTP/1.1" 200 -
+2015-11-02 05:15:48,706 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:48] "POST /web/dataset/call_kw/mail.message/fields_view_get HTTP/1.1" 200 -
+2015-11-02 05:15:48,799 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:48] "POST /web/dataset/call_kw/mail.message/fields_get HTTP/1.1" 200 -
+2015-11-02 05:15:48,802 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:48] "POST /web/dataset/call_kw/ir.filters/get_filters HTTP/1.1" 200 -
+2015-11-02 05:15:48,912 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:48] "POST /web/dataset/call_kw/hr.employee/get_suggested_thread HTTP/1.1" 200 -
+yyyyyyyyyyyyyyyyyyyyy {'lang': u'en_US', 'project_id': False, 'tz': u'Asia/Kolkata', 'uid': 1}
+2015-11-02 05:15:49,239 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:49] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2015-11-02 05:15:52,354 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:52] "POST /web/action/load HTTP/1.1" 200 -
+2015-11-02 05:15:52,364 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:52] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2015-11-02 05:15:52,464 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:52] "POST /web/dataset/call_kw/share.wizard/has_share HTTP/1.1" 200 -
+2015-11-02 05:15:52,474 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:52] "POST /web/dataset/call_kw/board.board/fields_view_get HTTP/1.1" 200 -
+2015-11-02 05:15:52,626 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:52] "POST /web/dataset/call_kw/board.board/onchange HTTP/1.1" 200 -
+2015-11-02 05:15:52,723 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:52] "POST /web/action/load HTTP/1.1" 200 -
+2015-11-02 05:15:52,734 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:52] "POST /web/action/load HTTP/1.1" 200 -
+2015-11-02 05:15:52,880 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:52] "POST /web/dataset/call_kw/hr.holidays/fields_view_get HTTP/1.1" 200 -
+2015-11-02 05:15:52,891 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:52] "POST /web/dataset/call_kw/hr.holidays/fields_view_get HTTP/1.1" 200 -
+2015-11-02 05:15:52,933 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:52] "POST /web/dataset/call_kw/hr.expense.expense/fields_view_get HTTP/1.1" 200 -
+2015-11-02 05:15:53,001 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:53] "POST /web/dataset/call_kw/ir.filters/get_filters HTTP/1.1" 200 -
+2015-11-02 05:15:53,029 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:53] "POST /web/dataset/call_kw/hr.holidays/fields_get HTTP/1.1" 200 -
+2015-11-02 05:15:53,098 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:53] "POST /web/dataset/call_kw/hr.expense.expense/fields_view_get HTTP/1.1" 200 -
+2015-11-02 05:15:53,162 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:53] "POST /web/dataset/call_kw/hr.holidays/fields_view_get HTTP/1.1" 200 -
+2015-11-02 05:15:53,239 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:53] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2015-11-02 05:15:53,325 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:53] "POST /web/dataset/call_kw/hr.holidays/read_group HTTP/1.1" 200 -
+2015-11-02 05:15:54,508 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:54] "POST /web/action/load HTTP/1.1" 200 -
+2015-11-02 05:15:54,707 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:54] "POST /web/dataset/call_kw/hr.expense.expense/fields_view_get HTTP/1.1" 200 -
+2015-11-02 05:15:54,746 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:54] "POST /web/dataset/call_kw/hr.expense.expense/fields_view_get HTTP/1.1" 200 -
+2015-11-02 05:15:54,871 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:54] "POST /web/dataset/call_kw/ir.filters/get_filters HTTP/1.1" 200 -
+2015-11-02 05:15:54,883 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:54] "POST /web/dataset/call_kw/hr.expense.expense/fields_get HTTP/1.1" 200 -
+2015-11-02 05:15:55,000 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:55] "POST /web/dataset/call_kw/hr.expense.expense/fields_view_get HTTP/1.1" 200 -
+2015-11-02 05:15:55,174 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:55] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2015-11-02 05:15:55,977 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:55] "POST /web/dataset/call_kw/hr.expense.expense/fields_view_get HTTP/1.1" 200 -
+2015-11-02 05:15:56,354 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:56] "POST /web/dataset/call_kw/hr.expense.expense/read HTTP/1.1" 200 -
+2015-11-02 05:15:56,531 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:56] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2015-11-02 05:15:56,715 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:56] "POST /web/dataset/call_kw/hr.expense.line/read HTTP/1.1" 200 -
+2015-11-02 05:15:59,690 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:59] "POST /web/dataset/call_kw/hr.expense.expense/search_read HTTP/1.1" 200 -
+2015-11-02 05:15:59,774 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:59] "POST /web/dataset/call_kw/hr.expense.line/read HTTP/1.1" 200 -
+2015-11-02 05:15:59,873 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:15:59] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2015-11-02 05:16:02,719 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:02] "POST /web/action/load HTTP/1.1" 200 -
+2015-11-02 05:16:02,801 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:02] "POST /report/check_wkhtmltopdf HTTP/1.1" 200 -
+2015-11-02 05:16:03,232 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:03] "GET /report/static/src/css/reset.min.css HTTP/1.1" 200 -
+2015-11-02 05:16:03,245 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:03] "GET /web/static/lib/bootstrap/css/bootstrap.css HTTP/1.1" 200 -
+2015-11-02 05:16:03,246 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:03] "GET /website/static/src/css/website.css HTTP/1.1" 200 -
+2015-11-02 05:16:03,246 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:03] "GET /web/static/lib/fontawesome/css/font-awesome.css HTTP/1.1" 200 -
+2015-11-02 05:16:03,562 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:03] "GET /report/static/src/js/subst.js HTTP/1.1" 200 -
+2015-11-02 05:16:03,663 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:03] "POST /report/download HTTP/1.1" 200 -
+2015-11-02 05:16:38,620 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:38] "POST /longpolling/poll HTTP/1.1" 200 -
+2015-11-02 05:16:46,886 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:46] "GET /web/static/src/img/icons/terp-stock_format-scientific.png HTTP/1.1" 200 -
+2015-11-02 05:16:46,887 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:46] "GET /web/static/src/img/icons/gtk-go-forward.png HTTP/1.1" 200 -
+2015-11-02 05:16:46,891 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:46] "GET /web/static/src/img/icons/gtk-apply.png HTTP/1.1" 200 -
+2015-11-02 05:16:46,893 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:46] "GET /web/static/src/img/icons/gtk-no.png HTTP/1.1" 200 -
+2015-11-02 05:16:46,894 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:46] "GET /web/static/src/img/search_reset.gif HTTP/1.1" 200 -
+2015-11-02 05:16:46,898 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:46] "GET /web/static/lib/jquery.ui.bootstrap/css/custom-theme/images/ui-bg_glass_75_ffffff_1x400.png HTTP/1.1" 200 -
+2015-11-02 05:16:46,920 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:46] "GET /board/static/src/img/layout_1-1-1.png HTTP/1.1" 200 -
+2015-11-02 05:16:46,951 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:46] "GET /web/static/lib/jquery.ui.bootstrap/css/custom-theme/images/ui-icons_222222_256x240.png HTTP/1.1" 200 -
+2015-11-02 05:16:51,709 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:51] "GET /web?db=ants_test HTTP/1.1" 200 -
+2015-11-02 05:16:54,861 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:54] "GET /web?db=ants_test HTTP/1.1" 200 -
+2015-11-02 05:16:55,267 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:55] "GET /web?db=ants_test HTTP/1.1" 200 -
+2015-11-02 05:16:55,285 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:55] "GET /web?db=ants_test HTTP/1.1" 200 -
+2015-11-02 05:16:55,379 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:55] "GET /web?db=ants_test HTTP/1.1" 200 -
+2015-11-02 05:16:55,384 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:55] "GET /web?db=ants_test HTTP/1.1" 200 -
+2015-11-02 05:16:55,550 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:55] "GET /web?db=ants_test HTTP/1.1" 200 -
+2015-11-02 05:16:55,559 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:55] "GET /web?db=ants_test HTTP/1.1" 200 -
+2015-11-02 05:16:55,607 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:55] "GET /web?db=ants_test HTTP/1.1" 200 -
+2015-11-02 05:16:55,619 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:55] "GET /web/static/src/css/full.css HTTP/1.1" 200 -
+2015-11-02 05:16:55,707 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:55] "GET /web?db=ants_test HTTP/1.1" 200 -
+2015-11-02 05:16:55,711 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:55] "GET /web?db=ants_test HTTP/1.1" 200 -
+2015-11-02 05:16:55,711 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:55] "GET /web?db=ants_test HTTP/1.1" 200 -
+2015-11-02 05:16:55,744 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:55] "GET /web/css/web.assets_common/f58fb36 HTTP/1.1" 200 -
+2015-11-02 05:16:55,794 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:55] "GET /web/js/web.assets_common/f58fb36 HTTP/1.1" 200 -
+2015-11-02 05:16:55,941 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:55] "GET /web/css/web.assets_backend/2400f2d HTTP/1.1" 200 -
+2015-11-02 05:16:56,151 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:56] "GET /web/js/web.assets_backend/2400f2d HTTP/1.1" 200 -
+2015-11-02 05:16:56,495 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:56] "GET /web/binary/company_logo HTTP/1.1" 200 -
+2015-11-02 05:16:56,963 3966 INFO ants_test openerp.service.common: successful login from 'admin' using database 'ants_test'
+2015-11-02 05:16:56,964 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:56] "POST /web/session/get_session_info HTTP/1.1" 200 -
+2015-11-02 05:16:57,093 3966 INFO None werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:57] "POST /web/proxy/load HTTP/1.1" 200 -
+2015-11-02 05:16:57,191 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:57] "POST /web/session/modules HTTP/1.1" 200 -
+2015-11-02 05:16:57,202 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:57] "POST /web/webclient/translations HTTP/1.1" 200 -
+2015-11-02 05:16:57,408 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:57] "GET /web/static/src/img/user_menu_avatar.png HTTP/1.1" 200 -
+2015-11-02 05:16:57,420 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:57] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 -
+2015-11-02 05:16:57,464 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:57] "POST /web/dataset/call_kw/res.users/read HTTP/1.1" 200 -
+2015-11-02 05:16:57,540 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:57] "POST /calendar/notify HTTP/1.1" 200 -
+2015-11-02 05:16:57,540 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:57] "POST /web/dataset/call_kw/res.users/read HTTP/1.1" 200 -
+2015-11-02 05:16:57,552 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:57] "POST /web/dataset/call_kw/ir.config_parameter/get_param HTTP/1.1" 200 -
+2015-11-02 05:16:57,590 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:57] "POST /web/action/load HTTP/1.1" 200 -
+2015-11-02 05:16:57,608 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:57] "GET /im_odoo_support/static/img/odoo_o_small.png HTTP/1.1" 200 -
+2015-11-02 05:16:57,616 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:57] "POST /im_chat/init HTTP/1.1" 200 -
+2015-11-02 05:16:57,617 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:57] "GET /web/binary/image?model=res.users&field=image_small&id=1 HTTP/1.1" 200 -
+2015-11-02 05:16:57,623 3966 INFO ? werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:57] "GET /im_chat/static/src/img/green.png HTTP/1.1" 200 -
+2015-11-02 05:16:57,788 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:57] "POST /web/dataset/call_kw/share.wizard/has_share HTTP/1.1" 200 -
+2015-11-02 05:16:57,817 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:57] "POST /web/dataset/call_kw/hr.expense.expense/fields_view_get HTTP/1.1" 200 -
+2015-11-02 05:16:57,912 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:57] "POST /web/dataset/call_kw/hr.expense.expense/fields_view_get HTTP/1.1" 200 -
+2015-11-02 05:16:57,962 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:57] "POST /web/dataset/call_kw/ir.filters/get_filters HTTP/1.1" 200 -
+yyyyyyyyyyyyyyyyyyyyy {'lang': u'en_US', 'project_id': False, 'tz': u'Asia/Kolkata', 'uid': 1}
+2015-11-02 05:16:58,094 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:58] "POST /web/dataset/call_kw/hr.expense.expense/fields_get HTTP/1.1" 200 -
+2015-11-02 05:16:58,106 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:58] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2015-11-02 05:16:58,306 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:58] "POST /web/dataset/call_kw/hr.expense.expense/fields_view_get HTTP/1.1" 200 -
+2015-11-02 05:16:58,457 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:58] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2015-11-02 05:16:58,890 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:58] "POST /web/dataset/call_kw/hr.expense.expense/fields_view_get HTTP/1.1" 200 -
+2015-11-02 05:16:59,247 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:59] "POST /web/dataset/call_kw/hr.expense.expense/read HTTP/1.1" 200 -
+2015-11-02 05:16:59,254 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:59] "POST /web/dataset/call_kw/hr.expense.expense/read HTTP/1.1" 200 -
+2015-11-02 05:16:59,446 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:59] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2015-11-02 05:16:59,626 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:59] "POST /web/dataset/call_kw/hr.expense.line/read HTTP/1.1" 200 -
+2015-11-02 05:16:59,810 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:16:59] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2015-11-02 05:17:28,666 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:17:28] "POST /longpolling/poll HTTP/1.1" 200 -
+2015-11-02 05:17:47,892 3966 INFO ants_test werkzeug: 192.109.207.121 - - [02/Nov/2015 05:17:47] "POST /longpolling/poll HTTP/1.1" 200 -
+Warn: Can't find .pfb for face 'Times-Roman'
+<string>:3: (WARNING/2) Title underline too short.
+
+Human Resources Management.
+====================
+<string>:3: (WARNING/2) Title underline too short.
+
+Human Resources Management.
+====================
+<string>:3: (WARNING/2) Title underline too short.
+
+Human Resources Management.
+====================
+<string>:3: (WARNING/2) Title underline too short.
+
+Human Resources Management.
+====================
+<string>:3: (WARNING/2) Title underline too short.
+
+Human Resources Management.
+====================
+<string>:3: (WARNING/2) Title underline too short.
+
+Human Resources Management.
+====================
+<string>:3: (WARNING/2) Title underline too short.
+
+Human Resources Management.
+====================
+<string>:3: (WARNING/2) Title underline too short.
+
+Human Resources Management.
+====================
+<string>:3: (WARNING/2) Title underline too short.
+
+Human Resources Management.
+====================
+<string>:3: (WARNING/2) Title underline too short.
+
+Human Resources Management.
+====================
+<string>:3: (WARNING/2) Title underline too short.
+
+Human Resources Management.
+====================
+<string>:3: (WARNING/2) Title underline too short.
+
+Human Resources Management.
+====================
+<string>:3: (WARNING/2) Title underline too short.
+
+Human Resources Management.
+====================
+<string>:3: (WARNING/2) Title underline too short.
+
+Human Resources Management.
+====================
+<string>:3: (WARNING/2) Title underline too short.
+
+Human Resources Management.
+====================
+<string>:3: (WARNING/2) Title underline too short.
+
+Human Resources Management.
+====================
+<string>:3: (WARNING/2) Title underline too short.
+
+Human Resources Management.
+====================
+<string>:3: (WARNING/2) Title underline too short.
+
+Human Resources Management.
+====================
+<string>:3: (WARNING/2) Title underline too short.
+
+Human Resources Management.
+====================
+<string>:3: (WARNING/2) Title underline too short.
+
+Human Resources Management.
+====================
+<string>:3: (WARNING/2) Title underline too short.
+
+Human Resources Management.
+====================
+<string>:3: (WARNING/2) Title underline too short.
+
+Human Resources Management.
+====================
+<string>:3: (WARNING/2) Title underline too short.
+
+Human Resources Management.
+====================

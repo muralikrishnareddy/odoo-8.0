@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+	
+
+        <record model="ir.ui.view" id="hr_holidays.edit_holiday_status_form">
+            <field name="name">hr.holidays.status.form</field>
+            <field name="model">hr.holidays.status</field>
+            <field name="arch" type="xml">
+                <form string="Leave Type">
+	                <sheet string="Leave Type">
+	                    <group col="4">
+	                        <field name="name" attrs="{'readonly':[('holiday','=',True)]}"/>
+	                        <field name="code" attrs="{'readonly':[('holiday','=',True)]}"/>
+	                        <field name="categ_id" invisible='1'/>
+	                    </group>
+	                    <notebook>
+	                      <page string="Details">
+	                          <group>
+								<group name="selection" string="Validation">
+									<field name="holiday" attrs="{'invisible':[('holiday','=',False)],'readonly':[('holiday','=',True)]}"/>
+									<field name="max_days" attrs="{'invisible':[('holiday','=',True)]}"/>
+									<field name="need_certificate" attrs="{'invisible':[('holiday','=',True)]}"/>
+									<field name="eligible_months" attrs="{'invisible':[('holiday','=',True)]}"/>
+									<field name="double_validation" attrs="{'invisible':[('holiday','=',True)]}"/>
+									<field name="limit" attrs="{'invisible':[('holiday','=',True)]}"/>
+								</group>
+								<group name="second" string="Misc">
+									<field name="color_name"/>
+									<field name="active"/>
+								</group>
+	                          </group>
+	                      </page>
+	                    </notebook>
+	                </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_holiday_simple">
+            <field name="name">hr.holidays.report_tree</field>
+            <field name="model">hr.holidays</field>
+            <field name="priority">20</field>
+            <field name="arch" type="xml">
+                <tree colors="red:state == 'refuse';blue:state == ' draft';black:state in ('confirm','validate','validate1')" string="Leaves Summary">
+                    <field name="employee_id"/>
+                    <field name="category_id" invisible="1"/>
+                    <field name="department_id" invisible="1"/>
+                    <field name="type"/>
+                    <field name="name"/>
+                    <field name="number_of_days" string="Number of Days" sum="Remaining Days"/>
+                    <field name="date_from"/>
+                    <field name="date_to"/>
+                    <field name="holiday_status_id"/>
+                    <field name="holiday" invisible="1"/>
+                    <field name="fiscalyear_id" invisible="1"/>
+                    <field name="need_certificate" invisible="1"/>
+                    <field name="manager_id" invisible="1"/>
+                    <field name="user_id" invisible="1"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_holiday">
+            <field name="name">hr.holidays.tree</field>
+            <field name="model">hr.holidays</field>
+            <field name="arch" type="xml">
+                <tree colors="red:state == 'refuse';blue:state == ' draft';black:state in ('confirm','validate','validate1')" string="Leave Requests">
+                    <field name="employee_id"/>
+                    <field name="holiday_type" string="Mode" groups="base.group_no_one"/>
+                    <field name="holiday_status_id"/>
+                    <field name="name"/>
+                    <field name="date_from"/>
+                    <field name="date_to"/>
+                    <field name="number_of_days" string="Number of Days" sum="Remaining Days"/>
+                    <field name="state"/>
+                    <field name="holiday" invisible="1"/>
+                    <field name="fiscalyear_id" invisible="1"/>
+                    <field name="category_id" invisible="1"/>
+                    <field name="need_certificate" invisible="1"/>
+                    <field name="department_id" invisible="not context.get('set_visible',False)"/>
+                    <field name="manager_id" invisible="1"/>
+                    <field name="user_id" invisible="1"/>
+                </tree>
+            </field>
+        </record>        
+
+        <record id="hr_holidays.view_holiday_new_calendar" model="ir.ui.view">
+            <field name="name">Leave Request</field>
+            <field name="model">hr.holidays</field>
+            <field name="arch" type="xml">
+                <calendar string="Leave Request" color="employee_id"
+                          date_start="date_from" date_stop="date_to"
+                          quick_add="False" avatar_model="hr.employee">
+                    <field name="employee_id"/>
+                    <field name="holiday_status_id"/>
+                    <field name="holiday" />
+                </calendar>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="hr_holidays.edit_holiday_new">
+            <field name="name">Leave Request</field>
+            <field name="model">hr.holidays</field>
+            <field name="arch" type="xml">
+                <form string="Leave Request">
+                <field name="can_reset" invisible="1"/>
+                <field name="type" invisible="1"/>
+                <header>
+                    <button string="Confirm" name="confirm" states="draft" type="workflow" class="oe_highlight"/>
+                    <button string="Approve" name="validate" states="confirm" type="workflow" groups="base.group_hr_user" class="oe_highlight"/>
+                    <button string="Validate" name="second_validate" states="validate1" type="workflow" groups="base.group_hr_user" class="oe_highlight"/>
+                    <button string="Refuse" name="refuse" states="confirm,validate,validate1" type="workflow" groups="base.group_hr_user"/>
+                    <button string="Reset to Draft" name="reset" type="workflow"
+                            attrs="{'invisible': ['|', ('can_reset', '=', False), ('state', 'not in', ['confirm', 'refuse'])]}"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirm,validate" statusbar_colors='{"confirm":"blue","validate1":"blue","refuse":"red"}'/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" attrs="{'readonly':[('state','!=','draft'),('state','!=','confirm')], 'required': [('type', '=', 'add')]}"/>
+                            <field name="holiday_status_id" domain="[('holiday','=',False)]" context="{'employee_id':employee_id}" on_change="onchange_holiday_status_id(holiday_status_id)" options="{'no_create':true, 'no_open':true}"/>
+                            <field name="need_certificate" invisible='1' context="{'employee_id':employee_id}"/>
+                            <field name="certificate" context="{'employee_id':employee_id}" attrs="{'invisible':[('need_certificate','=',False)],'required':[('need_certificate','=',True)]}" />
+                                <label for="number_of_days_temp" string="Duration"/>
+                            <div>
+                                <group col="3" attrs="{'invisible': [('type', '=', 'add')]}">
+                                    <field name="date_from" nolabel="1" on_change="onchange_date_from(date_to, date_from)" attrs="{'required':[('type', '=', 'remove')]}" class="oe_inline"/><label string="-" class="oe_inline"/>
+                                    <field name="date_to" nolabel="1" on_change="onchange_date_to(date_to, date_from)"  attrs="{'required':[('type', '=', 'remove')]}" class="oe_inline"/>
+                                </group>
+                                <div>
+                                    <field name="number_of_days_temp" class="oe_inline"/> days
+                                </div>
+                            </div>
+                        </group>
+                        <group>
+                            <field name="holiday_type" on_change="onchange_type(holiday_type)" attrs="{'readonly':[('type', '=', 'remove'),('state','!=','draft')]}" string="Mode" groups="base.group_hr_user" context="{'employee_id':employee_id}" />
+                            <field name="employee_id" options="{'no_create':true, 'no_open':true}" attrs="{'required':[('holiday_type','=','employee')],'invisible':[('holiday_type','=','category')]}" on_change="onchange_employee(employee_id)" groups="base.group_hr_user"/>
+                            <field name="category_id" attrs="{'required':[('holiday_type','=','category')], 'readonly': [('type', '=', 'remove'),('state','!=','draft'), ('state','!=','confirm')], 'invisible':[('holiday_type','=','employee')]}"/>
+                            <field name="department_id" options="{'no_create':true, 'no_open':true}" attrs="{'readonly':['|', ('type','=','add'),('holiday_type','=','category')],'invisible':[('holiday_type','=','category')]}" groups="base.group_hr_user"/>
+                        </group>
+                    </group>
+                    <field name="notes" nolabel="1" colspan="4" placeholder="Add a reason..." attrs="{'invisible': [('type', '=', 'remove')]}"/>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="hr_holidays.open_ask_holidays">
+            <field name="name">Leave Request</field>
+            <field name="res_model">hr.holidays</field>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="hr_holidays.edit_holiday_new"/>
+            <field name="context">{'default_type': 'remove', 'search_default_my_leaves':1}</field>
+            <field name="domain">[('type','=','remove'),('holiday','=',False)]</field>
+            <field name="search_view_id" ref="hr_holidays.view_hr_holidays_filter"/>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to create a new leave request.
+              </p><p>
+                Once you have recorded your leave request, it will be sent
+                to a manager for validation. Be sure to set the right leave
+                type (recuperation, legal holidays, sickness) and the exact
+                number of open days related to your leave.
+              </p>
+            </field>
+        </record>          
+
+	</data>
+</openerp>        

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    
+        <!-- Fiscal Year -->
+        <record id="view_hr_fiscalyear_form" model="ir.ui.view">
+            <field name="name">hr.fiscalyear.form</field>
+            <field name="model">hr.fiscalyear</field>
+            <field name="arch" type="xml">
+                <form string="Fiscal year">
+                <header>
+                    <button name="create_period" string="Create Monthly Periods" states='draft' type="object" class="oe_highlight"/>
+                    <button name="create_period3" string="Create 3 Months Periods" states='draft' type="object" class="oe_highlight"/>
+                    <button name="close_fy" string="Close" states='draft' type="object" class="oe_highlight"/>
+                    <field name="state" widget="statusbar" nolabel="1" />
+                </header>
+                    <group>
+                        <group>
+                            <field name="name" attrs="{'readonly':[('state','not in',('draft'))]}"/>
+                            <field name="code" attrs="{'readonly':[('state','not in',('draft'))]}"/>
+                            <field name="company_id" attrs="{'readonly':[('state','not in',('draft'))]}" />
+                        </group>
+                        <group>
+                            <field name="date_start" attrs="{'readonly':[('state','not in',('draft'))]}"/>
+                            <field name="date_stop" attrs="{'readonly':[('state','not in',('draft'))]}"/>
+                        </group>
+                    </group>
+                    <field colspan="4" name="period_ids" nolabel="1" widget="one2many_list" readonly='1'>
+                        <form string="Period">
+                            <group col="4">
+                                <field name="name"/>
+                                <field name="code"/>
+                                <field name="date_start"/>
+                                <field name="date_stop"/>
+                                <field name="closing"/>
+                            </group>
+                        </form>
+                        <tree string="Period">
+                             <field name="name"/>
+                             <field name="code"/>
+                             <field name="date_start"/>
+                             <field name="date_stop"/>
+                        </tree>
+                    </field>
+                </form>
+            </field>
+        </record>
+        <record id="view_hr_fiscalyear_tree" model="ir.ui.view">
+            <field name="name">hr.fiscalyear.tree</field>
+            <field name="model">hr.fiscalyear</field>
+            <field name="arch" type="xml">
+                <tree string="Fiscalyear">
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="company_id" />
+                    <field name="state" invisible='1'/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_hr_fiscalyear_search" model="ir.ui.view">
+            <field name="name">hr.fiscalyear.search</field>
+            <field name="model">hr.fiscalyear</field>
+            <field name="arch" type="xml">
+                <search string="Search Fiscalyear">
+                    <field name="name" filter_domain="['|', ('name','ilike',self), ('code','ilike',self)]" string="Fiscal Year"/>
+                </search>
+            </field>
+        </record>
+        <record id="action_hr_fiscalyear" model="ir.actions.act_window">
+            <field name="name">Fiscal Years</field>
+            <field name="res_model">hr.fiscalyear</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                Click to start a new fiscal year for HR.
+              </p><p>
+              </p>
+            </field>
+        </record>
+        <menuitem id="menu_action_hr_fiscalyear" action="action_hr_fiscalyear" parent="hr.menu_hr_configuration" sequence="9"/>
+
+        <!-- Period -->
+        <record id="view_hr_period_form" model="ir.ui.view">
+            <field name="name">hr.period.form</field>
+            <field name="model">hr.period</field>
+            <field name="arch" type="xml">
+                <form string="Account Period">
+                    <header>
+                    </header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="fiscalyear_id" widget="selection"/>
+                                <label for="date_start" string="Duration"/>
+                                <div>
+                                    <field name="date_start" class="oe_inline" nolabel="1"/> -
+                                    <field name="date_stop" nolabel="1" class="oe_inline"/>
+                                </div>
+                            </group>
+                            <group>
+                                <field name="code"/>
+                                <field name="closing"/>
+                                <field name="company_id" widget="selection" />
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_hr_period_tree" model="ir.ui.view">
+            <field name="name">hr.period.tree</field>
+            <field name="model">hr.period</field>
+            <field name="arch" type="xml">
+              <tree string="Period">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="date_start"/>
+                    <field name="date_stop"/>
+                    <field name="closing"/>
+                    <field name="company_id" />
+                </tree>
+            </field>
+        </record>
+        
+    </data>
+</openerp>        
